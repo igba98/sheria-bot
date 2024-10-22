@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sheria-Bot</title>
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', path='/logo1.webp') }}"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', path='/main.css') }}" />
+  </head>
+  <body>
+    <img src="{{ url_for('static', path='/logo1.webp') }}" class="icon" />
+    <h3>Sheria-Bot</h3>
+    <form action="/" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" id="file" required />
+      <br></br>
+      <input type="submit" value="Send"/>
+    </form>
+  </body>
+</html>
